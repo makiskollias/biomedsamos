@@ -53,11 +53,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const updateLabSlider = () => {
       labTrack.style.transform = `translateX(-${labIndex * 100}%)`;
+
+      labSlides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === labIndex);
+      });
     };
 
     const goToNextLabSlide = () => {
       labIndex = (labIndex + 1) % labSlides.length;
       updateLabSlider();
+      labSlides[labIndex].classList.add("active");
     };
 
     const goToPrevLabSlide = () => {
