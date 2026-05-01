@@ -1,0 +1,57 @@
+.services {
+  background: #ffffff;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(17, 24, 39, 0.06);
+  transition: 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(17, 24, 39, 0.1);
+}
+
+.service-card__image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px;
+}
+
+/* φωτογραφίες */
+.service-card__image img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* logos */
+.service-card--logo .service-card__image img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.service-card h3 {
+  font-size: 19px;
+  margin: 22px 24px 10px;
+}
+
+.service-card p {
+  font-size: 15px;
+  margin: 0 24px 26px;
+}

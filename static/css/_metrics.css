@@ -1,0 +1,45 @@
+
+
+.metrics__grid {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
+  gap: 16px;
+}
+
+.metric-card strong {
+  display: block;
+  font-size: 22px;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.metric-card span {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.metrics {
+  margin-top: -50px;
+  position: relative;
+  z-index: 5;
+  padding-bottom: 28px;
+
+}
+
+
+.trust-zone {
+  background:
+    radial-gradient(circle at 12% 22%, rgba(215, 25, 32, 0.09), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+
+
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.94);
+  padding: 14px 16px;
+  border-radius: 14px;
+  box-shadow: 0 16px 42px rgba(17, 24, 39, 0.1);
+}

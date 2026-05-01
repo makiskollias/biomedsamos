@@ -1,0 +1,30 @@
+.trust {
+  background: #ffffff;
+  padding: 40px 0 70px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.trust__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.trust__item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.trust__item:hover {
+  opacity: 1;
+}
+
+.trust__item img {
+  max-height: 120px;
+  object-fit: contain;
+}

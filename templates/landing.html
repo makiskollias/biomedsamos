@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOMED Samos | Διαγνωστικό Κέντρο</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/landing.css') }}">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="container topbar__inner">
+        <div class="topbar__left">Βρείτε μας στο:
+            <a href="https://www.facebook.com/biomedsamos/?fref=ts" target="_blank" aria-label="Facebook" class="fb-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13.5 9H16V6h-2.5C11.6 6 10 7.6 10 9.5V12H8v3h2v7h3v-7h2.3l.4-3H13v-2c0-.6.4-1 1-1z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="topbar__right">
+
+    <a href="#map" class="topbar__map">Χάρτης</a>
+            <a href="tel:2273021179">22730 21179</a>
+        <a href="mailto:info@biomedsamos.gr">info@biomedsamos.gr</a>
+    </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="container navbar__inner">
+        <a href="/" class="logo">
+            <img src="{{ url_for('static', path='images/logo.png') }}" alt="BIOMED Samos">
+        </a>
+
+        <button class="burger" type="button" aria-label="Άνοιγμα μενού">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navlinks">
+            <a href="#services">Υπηρεσίες</a>
+            <a href="#exams">Εξετάσεις</a>
+            <a href="#team">Ιατρική ομάδα</a>
+            <a href="#contact">Επικοινωνία</a>
+            <a href="#map">Χάρτης</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <section class="hero">
+        <div class="hero__slider" aria-hidden="true">
+            <div class="hero__slide" style="background-image: url('{{ url_for('static', path='images/biomedsamos.jpg') }}');"></div>
+            <div class="hero__slide is-active" style="background-image: url('{{ url_for('static', path='images/hero.jpg') }}');"></div>
+            <div class="hero__slide" style="background-image: url('{{ url_for('static', path='images/lab.jpg') }}');"></div>
+        </div>
+
+        <div class="container hero__inner">
+            <div class="hero__content">
+
+    <div class="hero__text is-active">
+        <span class="section-kicker">Διαγνωστικό Κέντρο στη Σάμο</span>
+        <h1>Σύγχρονες διαγνωστικές υπηρεσίες με αξιοπιστία και φροντίδα.</h1>
+        <p>Ολοκληρωμένες εξετάσεις και συνεργασίες με κορυφαία δίκτυα.</p>
+    </div>
+
+    <div class="hero__text">
+        <span class="section-kicker">Αιμοληψίες κατ’ οίκον</span>
+        <h1>Εξυπηρέτηση στον χώρο σας με ασφάλεια και συνέπεια.</h1>
+        <p>Χωρίς ταλαιπωρία, με αξιοπιστία και επαγγελματισμό.</p>
+    </div>
+
+    <div class="hero__text">
+        <span class="section-kicker">Συνεργασίες</span>
+        <h1>Πρόσβαση σε εξειδικευμένες εξετάσεις.</h1>
+        <p>Μέσω συνεργασιών με Medisyn, Βιοιατρική και Labnet.</p>
+    </div>
+
+
+    <div class="hero__actions">
+        <a href="#contact" class="btn btn-primary">
+            Κλείστε ραντεβού τώρα
+                <span class="btn-arrow">→</span>
+        </a>
+
+        <a href="#services" class="btn btn-secondary">
+            Δείτε υπηρεσίες
+        </a>
+    </div>
+</div>
+        </div>
+    </section>
+
+
+
+    <section class="mobile-hero">
+    <div class="mobile-hero__bg">
+        <img src="{{ url_for('static', path='images/hero.jpg') }}" alt="BIOMED Samos">
+    </div>
+
+    <div class="container mobile-hero__inner">
+        <span class="section-kicker">Διαγνωστικό Κέντρο στη Σάμο</span>
+        <h1>Σύγχρονες διαγνωστικές υπηρεσίες με αξιοπιστία και φροντίδα.</h1>
+        <p>Ολοκληρωμένες εξετάσεις και αξιόπιστη εξυπηρέτηση στη Σάμο.</p>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="trust-zone">
+        <section class="section why-biomed">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker">Γιατί BIOMED</span>
+                <h2>Σοβαρή ιατρική εξυπηρέτηση με ανθρώπινη προσέγγιση.</h2>
+            </div>
+
+            <div class="why-biomed__grid">
+                <article class="feature-card">
+                    <h3>Αξιοπιστία</h3>
+                    <p>Διαγνωστικές υπηρεσίες με έμφαση στην ακρίβεια και την υπευθυνότητα.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Άμεση εξυπηρέτηση</h3>
+                    <p>Οργανωμένη διαδικασία, καθαρή επικοινωνία και συνέπεια στα ραντεβού.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Φροντίδα</h3>
+                    <p>Προσέγγιση με σεβασμό στον άνθρωπο και στις ανάγκες κάθε ασθενούς.</p>
+                </article>
+            </div>
+        </div>
+        </section>
+    </section>
+
+
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker">Υπηρεσίες</span>
+                <h2>Όλα όσα χρειάζεστε σε ένα σύγχρονο διαγνωστικό κέντρο.</h2>
+            </div>
+
+            <div class="services__grid">
+                <article class="service-card service-card--logo">
+                    <div class="service-card__image">
+                        <img src="{{ url_for('static', path='images/blood-test.jpg') }}" alt="Αιμοληψίες κατ’ οίκον">
+                    </div>
+                    <h3>Αιμοληψίες κατ’ οίκον</h3>
+                    <p>Υπηρεσία αιμοληψίας στον χώρο σας, με συνέπεια, ασφάλεια και άμεση εξυπηρέτηση.</p>
+                </article>
+
+                <article class="service-card service-card--logo">
+                    <div class="service-card__image">
+                        <img src="{{ url_for('static', path='images/eopyy.jpg') }}" alt="Σύμβαση ΕΟΠΥΥ">
+                    </div>
+                    <h3>Σύμβαση Ε.Ο.Π.Υ.Υ.</h3>
+                    <p>Εξυπηρέτηση ασφαλισμένων μέσω Ε.Ο.Π.Υ.Υ. για διαγνωστικές εξετάσεις.</p>
+                </article>
+
+                <article class="service-card service-card--logo">
+                    <div class="service-card__image">
+                        <img src="{{ url_for('static', path='images/labserv.jpg') }}" alt="Πακέτα εξετάσεων">
+                    </div>
+                    <h3>Πακέτα εξετάσεων</h3>
+                    <p>Οργανωμένα πακέτα προληπτικού ελέγχου ανάλογα με τις ανάγκες κάθε ασθενούς.</p>
+                </article>
+
+                <article class="service-card service-card--logo">
+                    <div class="service-card__image">
+                        <img src="{{ url_for('static', path='images/medisyn.jpg') }}" alt="Medisyn">
+                    </div>
+                    <h3>Συνεργασία με Medisyn</h3>
+                    <p>Συνεργασία με διαγνωστικό δίκτυο για ειδικές και εξειδικευμένες εξετάσεις.</p>
+                </article>
+
+                <article class="service-card service-card--logo">
+                    <div class="service-card__image">
+                        <img src="{{ url_for('static', path='images/bioiatriki.jpg') }}" alt="Βιοιατρική">
+                    </div>
+                    <h3>Συνεργασία με Βιοιατρική</h3>
+                    <p>Δυνατότητα διεκπεραίωσης εξειδικευμένων εξετάσεων μέσω συνεργαζόμενων εργαστηρίων.</p>
+                </article>
+
+                <article class="service-card service-card--logo">
+                    <div class="service-card__image">
+                        <img src="{{ url_for('static', path='images/labnet.jpg') }}" alt="Labnet">
+                    </div>
+                    <h3>Συνεργασία με Labnet</h3>
+                    <p>Πρόσβαση σε επιπλέον εργαστηριακές υπηρεσίες μέσα από αξιόπιστες συνεργασίες.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="exams" class="section exams">
+        <div class="container">
+            <div class="exams__content">
+                <div>
+                    <span class="section-kicker">Εξετάσεις</span>
+                    <h2>Προληπτικός και διαγνωστικός έλεγχος με οργανωμένη διαδικασία.</h2>
+                    <p>
+                        Στόχος μας είναι η αξιόπιστη διάγνωση, η σωστή καθοδήγηση και η άμεση εξυπηρέτηση
+                        κάθε ασθενούς.
+                    </p>
+                </div>
+
+                <div class="exams__panel">
+                    <h3>Ενδεικτικές εξετάσεις</h3>
+
+                    <div class="exams__list">
+                        <div class="exam-item">
+                            <strong>Αιματολογικές εξετάσεις</strong>
+                            <span>Γενική αίματος, βιοχημικός έλεγχος</span>
+                        </div>
+
+                        <div class="exam-item">
+                            <strong>Ορμονικός έλεγχος</strong>
+                            <span>Θυρεοειδής, μεταβολικός έλεγχος</span>
+                        </div>
+
+                        <div class="exam-item">
+                            <strong>Προληπτικά check-up</strong>
+                            <span>Πακέτα ανά ηλικία και ανάγκη</span>
+                        </div>
+
+                        <div class="exam-item">
+                            <strong>Εξειδικευμένες εξετάσεις</strong>
+                            <span>Μέσω συνεργαζόμενων εργαστηρίων</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker">Ιατρός</span>
+                <h2>Dr. Μάνος Λογοθέτης</h2>
+            </div>
+
+            <article class="team-profile">
+                <div class="team-profile__content">
+                    <span class="section-kicker">Βιοπαθολόγος</span>
+                    <h3>Επιστημονική υπευθυνότητα και σύγχρονη διαγνωστική προσέγγιση.</h3>
+                    <p>
+                    Ο Dr. Μάνος Λογοθέτης είναι ιατρός βιοπαθολόγος – μικροβιολόγος και επιστημονικός υπεύθυνος της BIOMED, με πολυετή εμπειρία στον τομέα της εργαστηριακής διάγνωσης και της υγείας.
+                    </p>
+
+                    <ul class="doctor__bio">
+                        <li>Απόφοιτος Ιατρικής Σχολής Πανεπιστημίου Semmelweis (Βουδαπέστη)</li>
+                        <li>Μεταπτυχιακό στην Οργάνωση & Διοίκηση Υπηρεσιών Υγείας (ΕΚΠΑ)</li>
+                        <li>Διδάκτωρ Ιατρικής Σχολής ΕΚΠΑ</li>
+                        <li>Επιστημονικός συνεργάτης στο Πανεπιστημιακό Νοσοκομείο «Αρεταίειο»</li>
+                    </ul>
+                </div>
+
+                <div class="team-profile__image">
+                    <img src="{{ url_for('static', path='images/doctor.jpg') }}" alt="Dr. Μάνος Λογοθέτης">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="trust">
+        <div class="container trust__inner">
+
+            <div class="trust__item">
+                <img src="{{ url_for('static', path='images/eopyy.jpg') }}" alt="EOPYY">
+            </div>
+
+            <div class="trust__item">
+                <img src="{{ url_for('static', path='images/medisyn.jpg') }}" alt="Medisyn">
+            </div>
+
+            <div class="trust__item">
+                <img src="{{ url_for('static', path='images/bioiatriki.jpg') }}" alt="Bioiatriki">
+            </div>
+
+            <div class="trust__item">
+                <img src="{{ url_for('static', path='images/labnet.jpg') }}" alt="Labnet">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="section lab">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-kicker">Το εργαστήριό μας</span>
+            <h2>Ένας σύγχρονος και φιλικός χώρος για την υγεία σας.</h2>
+        </div>
+<div class="lab-slider">
+
+    <div class="lab-slider__track">
+            <img src="{{ url_for('static', path='images/slide1.jpg') }}" alt="">
+            <img src="{{ url_for('static', path='images/slide2-1.jpg') }}" alt="">
+            <img src="{{ url_for('static', path='images/slide3-1.jpg') }}" alt="">
+            <img src="{{ url_for('static', path='images/slide4-1.jpg') }}" alt="">
+    </div>
+    </div>
+
+    </div>
+    </section>
+
+
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker">Επικοινωνία</span>
+                <h2>Κλείστε ραντεβού ή στείλτε μας το μήνυμά σας.</h2>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <h3>Στοιχεία επικοινωνίας</h3>
+
+                    <div class="contact__list">
+                        <div class="contact__item">
+                            <strong>Τηλέφωνο</strong>
+                            <a href="tel:2273021179">22730 21179</a>
+                        </div>
+
+                        <div class="contact__item">
+                            <strong>Email</strong>
+                            <a href="mailto:info@biomedsamos.gr">info@biomedsamos.gr</a>
+                        </div>
+
+                        <div class="contact__item">
+                            <strong>Περιοχή</strong>
+                            <span>Σάμος</span>
+                        </div>
+
+                        <div class="contact__item">
+                            <strong>Ωράριο</strong>
+                            <span>Δευτέρα - Παρασκευή κατόπιν επικοινωνίας</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form form" method="post" action="#contact">
+                    <h3>Στείλτε μήνυμα</h3>
+                    <input type="text" placeholder="Ονοματεπώνυμο">
+                    <input type="tel" placeholder="Τηλέφωνο">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Το μήνυμά σας"></textarea>
+                    <button type="submit" class="btn btn-primary form__submit">
+                        Αποστολή αιτήματος
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="section map">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-kicker">Τοποθεσία</span>
+            <h2>Βρείτε μας στο Βαθύ</h2>
+        </div>
+
+        <div class="map__wrapper">
+            <iframe
+                src="https://www.google.com/maps?q=Kanari%2023,%20Vathi%20180%2010&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+
+        <!-- 1. Κέντρα & Ωράρια -->
+        <div class="footer-col footer-col--locations">
+            <h4>Κέντρα & Ωράρια</h4>
+
+            <div class="footer-location">
+                <strong>Βαθύ</strong>
+                <p>Δευτέρα - Παρασκευή: 07:30 - 13:30</p>
+                <p>Σάββατο: 08:00 - 12:00</p>
+            </div>
+
+            <div class="footer-location">
+                <strong>Χώρα</strong>
+                <p>Κατόπιν επικοινωνίας</p>
+            </div>
+        </div>
+
+        <!-- 2. Επικοινωνία -->
+        <div class="footer-col">
+            <h4>Επικοινωνία</h4>
+            <p><strong>Τηλ:</strong> 22730 21179</p>
+            <p><strong>Email:</strong> info@biomedsamos.gr</p>
+            <p><strong>Περιοχή:</strong> Σάμος</p>
+        </div>
+
+        <!-- 3. Ασφαλιστική κάλυψη -->
+        <div class="footer-col">
+            <h4>Ασφαλιστική κάλυψη</h4>
+            <p>Σύμβαση με Ε.Ο.Π.Υ.Υ. για ασφαλισμένους.</p>
+            <p>Συνεργασίες με Medisyn, Βιοιατρική και Labnet.</p>
+        </div>
+
+        <!-- 4. Links -->
+        <div class="footer-col">
+            <h4>Πλοήγηση</h4>
+            <a href="#services">Υπηρεσίες</a><br>
+            <a href="#exams">Εξετάσεις</a><br>
+            <a href="#team">Ιατρική ομάδα</a><br>
+            <a href="#contact">Επικοινωνία</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 BIOMED Samos
+    </div>
+</footer>
+
+
+
+<div class="nav-overlay"></div>
+
+<a href="tel:2273021179" class="floating-call" aria-label="Κλήση">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.9.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.5 22 2 13.5 2 3c0-.6.4-1 1-1h4.5c.6 0 1 .4 1 1 0 1.4.2 2.7.6 3.9.1.4 0 .8-.3 1.1l-2.2 2.2z"/>
+    </svg>
+</a>
+
+<script src="{{ url_for('static', path='js/landing.js') }}"></script>
+</body>
+</html>
