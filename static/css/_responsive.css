@@ -326,6 +326,10 @@
     font-size: 17px;
   }
 
+  .section {
+    padding: 35px 0;
+  }
+
   .mobile-hero h1 {
     margin-bottom: 14px;
     color: #ffffff;
