@@ -164,11 +164,35 @@
 .navlinks a:hover::after {
   width: 100%;
 }
-
 .topbar__left {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
+
+/* κοινό style */
+.topbar-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px; /* square feel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.topbar-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* hover */
+.topbar-icon:hover {
+  background: #fff;
+  color: var(--color-primary);
+}
+
 
 .topbar__social {
   display: inline-flex;
@@ -190,10 +214,9 @@
 
 
 .fb-icon {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 8px;
+  margin-left: 3px;
   color: #ffffff;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
