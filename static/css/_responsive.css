@@ -316,6 +316,10 @@
     padding-bottom: 44px;
   }
 
+  section {
+  scroll-margin-top: 40px;
+}
+
   .mobile-hero .section-kicker {
     align-self: flex-start;
     margin-bottom: 16px;
