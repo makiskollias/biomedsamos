@@ -106,6 +106,17 @@
   box-shadow: 0 8px 18px rgba(215, 25, 32, 0.3);
 }
 
+.contact-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
 
 
 .form input,

@@ -52,7 +52,6 @@
 .team-profile__content li {
   position: relative;
   padding-left: 18px;
-  color:var(--color-muted);
 }
 
 .team-profile__content li::before {
