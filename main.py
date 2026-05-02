@@ -11,8 +11,10 @@ templates = Jinja2Templates(directory="templates")
 
 
 @app.get("/", response_class=HTMLResponse)
-def landing(request: Request):
-    return templates.TemplateResponse(
-        "landing.html",
-        {"request": request}
-    )
+async def landing(request: Request):
+    return templates.TemplateResponse("landing.html", {"request": request})
+
+
+@app.head("/")
+async def landing_head():
+    return HTMLResponse(content="")

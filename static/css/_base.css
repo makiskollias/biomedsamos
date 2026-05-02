@@ -25,7 +25,7 @@ section {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Inter", sans-serif !important;
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
@@ -53,10 +53,28 @@ a {
 
 .section-kicker {
   display: inline-block;
-  font-size: 19px;
+  font-size: 15px;
   color: var(--color-primary);
   margin-bottom: 10px;
 }
+
+h1, h2, h3,
+.section-kicker,
+.btn {
+  font-family: "Geologica", sans-serif !important;
+}
+
+
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
 
 h1 {
   font-size: 42px;
@@ -69,9 +87,11 @@ h2 {
   line-height: 1.3;
 }
 
-p {
-  color: var(--color-muted);
+h1, h2, h3, p {
+  text-wrap: pretty;
 }
+
+
 
 .footer {
   background: #0f172a;
@@ -257,13 +277,13 @@ p {
   width: 58px !important;
   height: 58px !important;
   border-radius: 50% !important;
-  background: var(--color-primary) !important;
   color: #ffffff !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   z-index: 99999 !important;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: #d71920;
 }
 
 .floating-call:hover {
@@ -304,29 +324,7 @@ p {
   z-index: 1;
 }
 
-.lab-slider__btn {
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-  width: 44px;
-  height: 44px;
-  margin-top: -22px;
-  border: none;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--color-text);
-  font-size: 32px;
-  cursor: pointer;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
-}
 
-.lab-slider__btn--prev {
-  left: 16px;
-}
-
-.lab-slider__btn--next {
-  right: 16px;
-}
 
 @media (max-width: 900px) {
   h1 {
