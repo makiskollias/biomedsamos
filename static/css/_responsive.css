@@ -365,6 +365,10 @@
     font-size: 17px;
   }
 
+  .section-kicker {
+    font-size: 17px !important; ;
+  }
+
   .section {
     padding: 50px 0;
   }
