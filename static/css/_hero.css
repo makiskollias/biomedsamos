@@ -128,7 +128,3 @@
 .btn-primary:hover .btn-arrow {
   transform: translateX(4px);
 }
-
-section {
-  scroll-margin-top: 90px;
-}
