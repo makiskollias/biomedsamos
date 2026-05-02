@@ -10,7 +10,6 @@
   --container-width: 1180px;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -94,7 +93,7 @@ p {
 .footer-col p,
 .footer-col a {
   font-size: 14px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.7;
 }
 
@@ -106,48 +105,8 @@ p {
   margin-top: 40px;
   text-align: center;
   font-size: 13px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 34px;
-  }
-
-  h2 {
-    font-size: 27px;
-  }
-
-  .services__grid,
-  .team__grid,
-  .exams__content,
-  .contact__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .topbar__inner,
-  .footer__inner {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .team-card {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .services {
   background: #ffffff;
@@ -185,7 +144,6 @@ p {
   padding: 12px;
 }
 
-/* φωτογραφίες */
 .service-card__image img {
   width: 100%;
   height: 100%;
@@ -197,12 +155,9 @@ p {
   transform: scale(1.05);
 }
 
-/* logos */
 .service-card--logo .service-card__image {
   background: #ffffff;
 }
-
-
 
 .service-card h3 {
   font-size: 19px;
@@ -218,8 +173,6 @@ p {
   overflow: hidden;
   padding-bottom: 100px;
 }
-
-
 
 .why-biomed::before {
   content: "";
@@ -259,7 +212,6 @@ p {
   box-shadow: 0 26px 60px rgba(17, 24, 39, 0.12);
 }
 
-
 .feature-card h3 {
   font-size: 19px;
   margin-bottom: 10px;
@@ -286,7 +238,6 @@ p {
   font-size: 15px;
 }
 
-/* MAP */
 .map__wrapper {
   border-radius: 18px;
   overflow: hidden;
@@ -298,15 +249,6 @@ p {
   height: 380px;
   border: 0;
 }
-
-/* floating call */
-
-
-.floating-call:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
-}
-
 
 .floating-call {
   position: fixed !important;
@@ -321,7 +263,12 @@ p {
   align-items: center !important;
   justify-content: center !important;
   z-index: 99999 !important;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+.floating-call:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
 }
 
 .floating-call svg {
@@ -329,73 +276,99 @@ p {
   height: 26px !important;
 }
 
-
-/* IMAGES */
-
 .lab-slider {
   position: relative;
+  height: 420px;
   overflow: hidden;
   border-radius: 22px;
 }
 
 .lab-slider__track {
-  display: flex;
-  transition: transform 0.6s ease;
+  position: relative;
+  height: 100%;
 }
 
 .lab-slider__track img {
-  flex: 0 0 100%;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
-  opacity: 0.4;
-  transition: opacity 0.6s ease;
+  display: block;
+  opacity: 0;
+  transition: opacity 1.2s ease;
 }
-
-
 
 .lab-slider__track img.active {
   opacity: 1;
+  z-index: 1;
 }
 
 .lab-slider__btn {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   z-index: 2;
   width: 44px;
   height: 44px;
+  margin-top: -22px;
   border: none;
   border-radius: 999px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--color-text);
   font-size: 32px;
   cursor: pointer;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
 }
 
 .lab-slider__btn--prev {
   left: 16px;
 }
 
-.lab-slider__track {
-  display: flex;
-  transition: transform 0.6s ease;
-}
-
 .lab-slider__btn--next {
   right: 16px;
 }
 
-@media (max-width: 768px) {
-  .lab-slider__track img {
-    height: 280px;
+@media (max-width: 900px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .services__grid,
+  .team__grid,
+  .exams__content,
+  .contact__grid,
+  .why-biomed__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .topbar__inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-card {
+    grid-template-columns: 1fr;
   }
 }
 
+@media (max-width: 768px) {
+  .lab-slider {
+    height: 240px;
+    border-radius: 18px;
+  }
+}
 
-@media (max-width: 900px) {
-  .why-biomed__grid {
-    grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  .lab-slider {
+    height: 220px;
   }
 }

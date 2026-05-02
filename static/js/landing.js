@@ -42,37 +42,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const labTrack = document.querySelector(".lab-slider__track");
+  const labSlider = document.querySelector(".lab-slider");
   const labSlides = document.querySelectorAll(".lab-slider__track img");
 
-  if (labTrack && labSlides.length > 1) {
+  if (labSlider && labSlides.length > 1) {
     let labIndex = 0;
     let labTimer = null;
-    let touchStartX = 0;
-    let touchEndX = 0;
 
     const updateLabSlider = () => {
-      labTrack.style.transform = `translateX(-${labIndex * 100}%)`;
-
-      labSlides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === labIndex);
+      labSlides.forEach((slide, index) => {
+        slide.classList.toggle("active", index === labIndex);
       });
     };
 
     const goToNextLabSlide = () => {
       labIndex = (labIndex + 1) % labSlides.length;
       updateLabSlider();
-      labSlides[labIndex].classList.add("active");
-    };
-
-    const goToPrevLabSlide = () => {
-      labIndex = (labIndex - 1 + labSlides.length) % labSlides.length;
-      updateLabSlider();
     };
 
     const startLabSlider = () => {
       stopLabSlider();
-      labTimer = setInterval(goToNextLabSlide, 3500);
+      labTimer = setInterval(goToNextLabSlide, 5000);
     };
 
     const stopLabSlider = () => {
@@ -82,27 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    labTrack.addEventListener("touchstart", (event) => {
-      touchStartX = event.changedTouches[0].screenX;
-      stopLabSlider();
-    }, { passive: true });
-
-    labTrack.addEventListener("touchend", (event) => {
-      touchEndX = event.changedTouches[0].screenX;
-      const swipeDistance = touchEndX - touchStartX;
-
-      if (Math.abs(swipeDistance) > 45) {
-        if (swipeDistance < 0) {
-          goToNextLabSlide();
-        } else {
-          goToPrevLabSlide();
-        }
-      }
-
-      startLabSlider();
-    }, { passive: true });
-
     updateLabSlider();
     startLabSlider();
+
+    labSlider.addEventListener("mouseenter", stopLabSlider);
+    labSlider.addEventListener("mouseleave", startLabSlider);
   }
 });
