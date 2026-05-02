@@ -312,20 +312,20 @@ h1, h2, h3, p {
   height: 100%;
 }
 
+
+
 .lab-slider__track img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  opacity: 0;
-  transition: opacity 1.2s ease;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  transition: opacity 1.2s ease !important;
 }
 
 .lab-slider__track img.active {
-  opacity: 1;
-  z-index: 1;
+  opacity: 1 !important;
+  z-index: 1 !important;
 }
 
 
