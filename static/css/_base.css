@@ -296,6 +296,10 @@ h1, h2, h3, p {
   height: 26px !important;
 }
 
+.lab-slider__track {
+  transform: none !important;
+}
+
 .lab-slider {
   position: relative;
   height: 420px;
