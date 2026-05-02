@@ -136,6 +136,7 @@
   }
 
   .team-profile__image {
+    overflow: hidden;
     min-height: 320px;
   }
 
@@ -195,6 +196,16 @@
     transform: translateY(-7px) rotate(-45deg);
   }
 
+  .team-profile__image {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .team-profile__image img {
+    object-fit: cover;
+    object-position: center top;
+  }
+
   .navlinks {
     position: fixed !important;
     top: 0;
@@ -216,6 +227,20 @@
   .navlinks.is-open {
     box-shadow: -24px 0 60px rgba(0, 0, 0, 0.15) !important;
     transform: translateX(0) !important;
+  }
+
+   .lab-slider {
+    height: auto;
+  }
+
+  .lab-slider__track {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .lab-slider__track img {
+    object-fit: cover;
+    object-position: center;
   }
 
   .navlinks a {
