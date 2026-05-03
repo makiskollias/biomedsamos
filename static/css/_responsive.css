@@ -139,7 +139,7 @@
 
   .team-profile__image {
     overflow: hidden;
-    min-height: 320px !important;
+    min-height: 320px;
   }
 
   .doctor__bio {
@@ -170,11 +170,13 @@
 
 
   .team-profile__image {
+    width: 100%;
     min-height: 0;
     aspect-ratio: 4 / 5;
   }
 
   .team-profile__image img {
+    height: 100%;
     object-fit: cover;
     object-position: center top;
   }
