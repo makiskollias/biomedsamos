@@ -29,39 +29,12 @@
     display: none;
   }
 
-    .burger {
-    display: flex;
-    z-index: 300 !important;
-  }
-
-  .burger span {
-    transition: transform 0.25s ease, opacity 0.25s ease;
-  }
-
-  .burger.is-open span {
-    background: var(--color-text);
-  }
-
-  .burger.is-open span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-
-  .burger.is-open span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger.is-open span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
 
   /* navbar */
   .navbar__inner {
     height: 66px;
   }
 
-  .navlinks {
-    display: none;
-  }
 
   .logo img {
     height: 38px;
@@ -189,47 +162,12 @@
 
 /* 3. Mobile */
 @media (max-width: 768px) {
-  /* burger menu */
-  .navbar {
-    position: sticky !important;
-    top: 0;
-    z-index: 250;
-  }
 
-  .topbar {
+    .topbar {
     display: none;
   }
 
 
-
-  .navbar__inner {
-    position: relative;
-  }
-
-  .burger {
-    display: flex;
-    z-index: 300 !important;
-  }
-
-  .burger span {
-    transition: transform 0.25s ease, opacity 0.25s ease;
-  }
-
-  .burger.is-open span {
-    background: var(--color-text);
-  }
-
-  .burger.is-open span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-
-  .burger.is-open span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger.is-open span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
 
   .team-profile__image {
     min-height: 0;
@@ -241,30 +179,7 @@
     object-position: center top;
   }
 
-  .navlinks {
-    position: fixed !important;
-    top: 0;
-    right: 0;
-    left: auto;
-    z-index: 200 !important;
-    display: flex !important;
-    flex-direction: column;
-    width: 82%;
-    max-width: 340px;
-    height: 100vh;
-    padding: 90px 24px 24px;
-    background: #ffffff;
-    box-shadow: none !important;
-    transform: translateX(110%) !important;
-    transition: transform 0.35s ease;
-  }
-
-  .navlinks.is-open {
-    box-shadow: -24px 0 60px rgba(0, 0, 0, 0.15) !important;
-    transform: translateX(0) !important;
-  }
-
-   .lab-slider {
+  .lab-slider {
     height: auto;
   }
 
@@ -276,33 +191,6 @@
   .lab-slider__track img {
     object-fit: cover;
     object-position: center;
-  }
-
-  .navlinks a {
-    padding: 16px 0;
-    font-size: 16px;
-  }
-
-  .navlinks,
-  .navlinks * {
-    opacity: 1 !important;
-  }
-
-  .nav-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: 100;
-    background: transparent !important;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.25s ease;
-  }
-
-  .nav-overlay.is-active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
   }
 
   /* mobile hero */
@@ -352,8 +240,8 @@
   }
 
   section {
-  scroll-margin-top: 40px;
-}
+    scroll-margin-top: 40px;
+  }
 
   .mobile-hero .section-kicker {
     align-self: flex-start;
@@ -366,7 +254,7 @@
   }
 
   .section-kicker {
-    font-size: 17px !important; ;
+    font-size: 17px !important;
   }
 
   .section {
@@ -435,6 +323,7 @@
     display: flex !important;
   }
 }
+
 
 /* 4. Small devices */
 @media (max-width: 480px) {

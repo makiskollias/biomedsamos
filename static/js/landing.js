@@ -23,17 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.querySelector(".nav-overlay");
 
   if (burger && navlinks && overlay) {
-    const closeMenu = () => {
-      navlinks.classList.remove("is-open");
-      overlay.classList.remove("is-active");
-      burger.classList.remove("is-open");
-    };
+      const closeMenu = () => {
+        navlinks.classList.remove("is-open");
+        overlay.classList.remove("is-active");
+        burger.classList.remove("is-open");
+        document.body.classList.remove("menu-open");
+      };
 
-    burger.addEventListener("click", () => {
-      navlinks.classList.toggle("is-open");
-      overlay.classList.toggle("is-active");
-      burger.classList.toggle("is-open");
-    });
+      burger.addEventListener("click", () => {
+        navlinks.classList.toggle("is-open");
+        burger.classList.toggle("is-open");
+
+        document.body.classList.toggle("menu-open");
+      });
 
     overlay.addEventListener("click", closeMenu);
 
