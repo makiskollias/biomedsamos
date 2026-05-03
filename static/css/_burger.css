@@ -118,4 +118,24 @@ body.menu-open {
   .nav-overlay {
     display: none !important;
   }
+  .burger span {
+  width: 18px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 999px;
+  display: block;
+
+  transition: transform 0.25s ease;
+}
+
+/* hover effect */
+.burger:not(.is-open):hover span:nth-child(1) {
+  transform: translateY(-1.5px);
+}
+
+.burger:not(.is-open):hover span:nth-child(3) {
+  transform: translateY(1.5px);
+}
+
+
 }
