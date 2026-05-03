@@ -319,9 +319,24 @@
     font-size: 24px;
   }
 
+  .floating-call svg {
+  width: 26px !important;
+  height: 26px !important;
+  display: block !important;
+  fill: none !important;
+  stroke: #ffffff !important;
+  stroke-width: 2.2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
   .floating-call {
     display: flex !important;
   }
+  .floating-call {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 }
 
 

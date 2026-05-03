@@ -11,6 +11,18 @@
   gap: 5px;
 }
 
+.burger {
+  position: relative;
+  z-index: 9999;
+}
+
+body.menu-open .burger {
+  position: fixed;
+  top: 18px;
+  right: 20px;
+  z-index: 10000;
+}
+
 .burger span {
   width: 18px;
   height: 2px;
