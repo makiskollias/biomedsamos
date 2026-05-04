@@ -399,7 +399,7 @@ h1, h2, h3, p {
 /* banner */
 
 .free-checks {
-  background: #f8fafc;
+  background: var(--color-soft);
 }
 
 .free-checks .section-header p {

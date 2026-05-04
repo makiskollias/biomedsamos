@@ -128,3 +128,7 @@
 .form textarea::placeholder {
   color: #9ca3af;
 }
+
+.contact__item span {
+  display: block;
+}
