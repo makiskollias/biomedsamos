@@ -55,6 +55,7 @@
         <div class="navlinks">
             <a href="#services">Υπηρεσίες</a>
             <a href="#exams">Εξετάσεις</a>
+            <a href="#prevention">Πρόληψη</a>
             <a href="#team">Ιατρική ομάδα</a>
             <a href="#contact">Επικοινωνία</a>
             <a href="#map">Χάρτης</a>
@@ -162,41 +163,7 @@
     </section>
 
 
-<section class="section free-checks">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-kicker">Πρόληψη</span>
-      <h2>Δωρεάν εξετάσεις για την έγκαιρη φροντίδα της υγείας σας.</h2>
-      <p>Στη BIOMED συμμετέχουμε σε δράσεις πρόληψης για καρδιαγγειακά νοσήματα και νεφρική δυσλειτουργία.</p>
-    </div>
 
-    <div class="free-checks__grid">
-
-      <article class="free-check-card">
-        <div class="free-check-card__image">
-          <img src="{{ url_for('static', path='images/cardio.jpg') }}" alt="Καρδιαγγειακά νοσήματα">
-        </div>
-
-        <div class="free-check-card__content">
-          <h3>Πρόληψη καρδιαγγειακών νοσημάτων</h3>
-          <p>Ενημέρωση και προληπτικός έλεγχος για παράγοντες κινδύνου.</p>
-        </div>
-      </article>
-
-      <article class="free-check-card">
-        <div class="free-check-card__image">
-          <img src="{{ url_for('static', path='images/kidney.jpg') }}" alt="Νεφρική δυσλειτουργία">
-        </div>
-
-        <div class="free-check-card__content">
-          <h3>Δωρεάν έλεγχος για νεφρική δυσλειτουργία</h3>
-          <p>Δυνατότητα δωρεάν εξέτασης στο πλαίσιο προληπτικού ελέγχου.</p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
 
     <section id="services" class="section services">
         <div class="container">
@@ -297,6 +264,50 @@
             </div>
         </div>
     </section>
+
+
+<section id="prevention" class="section free-checks">
+        <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Πρόληψη</span>
+          <h2>Δωρεάν εξετάσεις για την έγκαιρη φροντίδα της υγείας σας.</h2>
+          <p>Στη BIOMED συμμετέχουμε σε δράσεις πρόληψης για καρδιαγγειακά νοσήματα και νεφρική δυσλειτουργία.</p>
+        </div>
+
+        <div class="free-checks__grid">
+
+          <article class="free-check-card">
+            <div class="free-check-card__image">
+              <img src="{{ url_for('static', path='images/cardio.jpg') }}" alt="Καρδιαγγειακά νοσήματα">
+            </div>
+
+            <div class="free-check-card__content">
+              <h3>Πρόληψη καρδιαγγειακών νοσημάτων</h3>
+              <p>Ενημέρωση και προληπτικός έλεγχος για παράγοντες κινδύνου.</p>
+            </div>
+          </article>
+
+          <article class="free-check-card">
+            <div class="free-check-card__image">
+              <img src="{{ url_for('static', path='images/kidney.jpg') }}" alt="Νεφρική δυσλειτουργία">
+            </div>
+
+            <div class="free-check-card__content">
+              <h3>Δωρεάν έλεγχος για νεφρική δυσλειτουργία</h3>
+              <p>Δυνατότητα δωρεάν εξέτασης στο πλαίσιο προληπτικού ελέγχου.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
 
     <section id="team" class="section team">
         <div class="container">
