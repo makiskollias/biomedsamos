@@ -388,19 +388,57 @@
         </div>
     </section>
 
-    <section id="map" class="section map">
+<section id="map" class="section map">
     <div class="container">
         <div class="section-header">
-            <span class="section-kicker">Τοποθεσία</span>
-            <h2>Βρείτε μας στο Βαθύ</h2>
+            <span class="section-kicker">Τοποθεσίες</span>
+            <h2>Βρείτε τα εργαστήριά μας στη Σάμο</h2>
         </div>
 
-        <div class="map__wrapper">
-            <iframe
-                src="https://www.google.com/maps?q=Kanari%2023,%20Vathi%20180%2010&output=embed"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <div class="map__grid">
+            <article class="map-card">
+                <div class="map-card__header">
+                    <h3>Βαθύ</h3>
+                    <p>Κανάρη 23, Βαθύ 180 10</p>
+                </div>
+
+                <div class="map-card__iframe">
+                    <iframe
+                        src="https://www.google.com/maps?q=37.7510891,26.9775798&z=16&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <a href="https://www.google.com/maps?q=37.7510891,26.9775798"
+                   target="_blank"
+                   class="map-card__link"
+                   onclick="umami.track('map_click')">
+                    Άνοιγμα στο Google Maps
+                </a>
+            </article>
+
+            <article class="map-card">
+                <div class="map-card__header">
+                    <h3>Χώρα</h3>
+                    <p>Εργαστήριο στη Χώρα Σάμου</p>
+                </div>
+
+                <div class="map-card__iframe">
+                    <iframe
+                        src="https://www.google.com/maps?q=37.7028056,26.9075833&z=17&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <a href="https://www.google.com/maps?q=37.7028056,26.9075833"
+                   target="_blank"
+                   class="map-card__link"
+                   onclick="umami.track('map_click')">
+                    Άνοιγμα στο Google Maps
+                </a>
+            </article>
         </div>
     </div>
 </section>
