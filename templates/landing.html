@@ -423,16 +423,18 @@
                     </div>
                 </div>
 
-                <form class="contact__form form" method="post" action="#contact">
-                    <h3>Στείλτε μήνυμα</h3>
-                    <input type="text" placeholder="Ονοματεπώνυμο">
-                    <input type="tel" placeholder="Τηλέφωνο">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Το μήνυμά σας"></textarea>
-                    <button type="submit" class="btn btn-primary form__submit">
-                        Αποστολή αιτήματος
-                        <span class="btn-arrow">→</span>
-                    </button>
+                <form class="contact__form form" method="post" action="/contact">
+                  <h3>Στείλτε μήνυμα</h3>
+
+                  <input type="text" name="name" placeholder="Ονοματεπώνυμο" required>
+                    <input type="tel" name="phone" placeholder="Τηλέφωνο">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Το μήνυμά σας" required></textarea>
+
+                  <button type="submit" class="btn btn-primary form__submit">
+                    Αποστολή αιτήματος
+                    <span class="btn-arrow">→</span>
+                  </button>
                 </form>
             </div>
         </div>
