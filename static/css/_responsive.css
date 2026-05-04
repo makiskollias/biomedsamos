@@ -349,6 +349,16 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
+
+  .map__grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.map-card__iframe iframe {
+  height: 260px;
+}
+
 }
 
 
