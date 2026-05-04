@@ -6,10 +6,12 @@ if (promoPopup && promoClose) {
 
   // 👉 ΒΑΖΕΙΣ ΗΜΕΡΟΜΗΝΙΑ ΛΗΞΗΣ
   const expiryDate = new Date("2026-05-31");
+  const seen = sessionStorage.getItem("promoSeen");
 
-  if (now <= expiryDate) {
+  if (now <= expiryDate && !seen) {
     setTimeout(() => {
       promoPopup.classList.add("is-visible");
+      sessionStorage.setItem("promoSeen", "true");
     }, 1200);
   }
 
