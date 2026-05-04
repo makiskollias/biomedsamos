@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', path='css/landing.css') }}?v=2">
     <link rel="icon" type="image/jpeg" href="/static/images/fav.jpg">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="bc2dd647-9cea-42fb-a611-07e6f79737b7"></script>
-</head>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/popup.css') }}">
+    </head>
 <body>
 
 <header class="topbar">
@@ -460,13 +461,15 @@
 
             <div class="footer-location">
                 <strong>Βαθύ</strong>
-                <p>Δευτέρα - Παρασκευή: 07:30 - 13:30</p>
+                <p>Δευτέρα - Παρασκευή: 07:30 - 15:00</p>
+                <p>και απογεύματα: 17:30 - 20:00</p>
                 <p>Σάββατο: 08:00 - 12:00</p>
             </div>
 
             <div class="footer-location">
                 <strong>Χώρα</strong>
-                <p>Κατόπιν επικοινωνίας</p>
+                <p>  </p>
+                <p>Δευτέρα - Παρασκευή: 07:30 - 13:30</p>
             </div>
         </div>
 
@@ -511,6 +514,8 @@
   </svg>
 </a>
 
+{% include "partials/popup.html" %}
+<script src="{{ url_for('static', path='js/popup.js') }}"></script>
 <script src="{{ url_for('static', path='js/landing.js') }}"></script>
 </body>
 </html>

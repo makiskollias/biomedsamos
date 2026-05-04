@@ -1,0 +1,121 @@
+.promo-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.promo-popup__image {
+  display: block;
+  max-width: 240px;
+  margin: 0 auto 2px;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.05));
+}
+
+.promo-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.promo-popup__box {
+  background: #ffffff;   /* ΜΟΝΟ λευκό */
+  padding: 22px;         /* κράτα padding */
+  border-radius: 24px;
+  position: relative;
+}
+
+.promo-popup.is-visible .promo-popup__box {
+  transform: translateY(0);
+}
+
+.promo-popup__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  z-index: 10;
+
+  font-size: 24px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.promo-popup__box {
+  text-align: center;
+}
+
+.promo-popup__kicker {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.promo-popup h2 {
+  margin: 10px 0 22px;
+  font-size: 28px;
+}
+
+.promo-popup__offers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.promo-popup__offers div {
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 18px;
+  background: #f9fafb;
+}
+
+.promo-popup__offers strong {
+  display: block;
+  color: var(--color-primary);
+  font-size: 30px;
+}
+
+.promo-popup__offers span {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.promo-popup__offers small {
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.promo-popup__note {
+  margin: 18px 0;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.promo-popup__btn {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .promo-popup__box {
+    padding: 28px 22px;
+  }
+
+  .promo-popup h2 {
+    font-size: 24px;
+  }
+
+  .promo-popup__offers {
+    grid-template-columns: 1fr;
+  }
+}
