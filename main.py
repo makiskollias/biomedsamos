@@ -70,3 +70,8 @@ Email: {email}
 @app.get("/sitemap.xml")
 async def sitemap():
     return FileResponse("static/sitemap.xml")
+
+
+@app.get("/robots.txt")
+async def robots():
+    return FileResponse("static/robots.txt")
