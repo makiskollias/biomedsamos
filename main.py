@@ -6,6 +6,7 @@ from fastapi import FastAPI, Form, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 
@@ -65,3 +66,7 @@ Email: {email}
         return RedirectResponse(url="/?contact_error=1#contact", status_code=303)
 
     return RedirectResponse(url="/?contact_success=1#contact", status_code=303)
+
+@app.get("/sitemap.xml")
+async def sitemap():
+    return FileResponse("static/sitemap.xml")
