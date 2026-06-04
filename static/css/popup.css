@@ -15,7 +15,7 @@
 
 .promo-popup__image {
   display: block;
-  max-width: 240px;
+  max-width: 300px;
   margin: 0 auto 2px;
   opacity: 0.9;
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.05));
@@ -121,7 +121,7 @@
   }
 
   .promo-popup__image {
-    max-width: 160px;
+    max-width: 240px;
     margin: 0 auto 4px;
   }
 
