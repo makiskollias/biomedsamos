@@ -109,7 +109,7 @@ h1, h2, h3, p {
 
 .footer__inner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 40px;
 }
 
