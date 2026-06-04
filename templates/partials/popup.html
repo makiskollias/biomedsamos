@@ -1,45 +1,30 @@
-<div id="campaign-popup" class="popup-overlay">
-    <div class="popup-box">
+<div class="promo-popup" id="promoPopup">
+  <div class="promo-popup__box">
+    <button class="promo-popup__close" id="promoClose">×</button>
 
-        <button class="popup-close">&times;</button>
+    <img src="{{ url_for('static', path='images/thyroid.jpg') }}"
+         alt="Προσφορά ελέγχου θυρεοειδούς"
+         class="promo-popup__image">
 
-        <img
-            src="/static/images/thyroid.jpg"
-            alt="Προσφορά Θυρεοειδούς"
-            class="popup-image"
-        >
+    <span class="promo-popup__kicker">Προληπτικός Έλεγχος Θυρεοειδούς</span>
 
-        <span class="popup-kicker">
-            Ειδική Προσφορά
-        </span>
+    <h2>Πλήρης έλεγχος θυρεοειδικής λειτουργίας</h2>
 
-        <h2>
-            Έλεγχος Θυρεοειδικής Λειτουργίας
-        </h2>
-
-        <div class="popup-price">
-            40€
-        </div>
-
-        <div class="popup-card">
-            <ul>
-                <li>TSH</li>
-                <li>T3</li>
-                <li>T4</li>
-                <li>FT3</li>
-                <li>FT4</li>
-                <li>Anti Tg</li>
-                <li>Anti TPO</li>
-            </ul>
-        </div>
-
-        <p class="popup-note">
-            Μεμονωμένα ο έλεγχος κοστίζει περίπου 70€.
-        </p>
-
-        <a href="#contact" class="popup-cta">
-            Κλείστε Ραντεβού →
-        </a>
-
+    <div class="promo-popup__offers promo-popup__offers--thyroid">
+      <div>
+        <strong>40€</strong>
+        <span>Πακέτο εξετάσεων</span>
+        <small>TSH, T3, T4, FT3, FT4, Anti Tg, Anti TPO</small>
+      </div>
     </div>
+
+    <p class="promo-popup__note">
+      Προνομιακή τιμή για ολοκληρωμένο έλεγχο θυρεοειδούς.
+    </p>
+
+    <a href="#contact" class="btn btn-primary promo-popup__btn" id="promoCta">
+      Κλείστε ραντεβού
+      <span class="btn-arrow">→</span>
+    </a>
+  </div>
 </div>
