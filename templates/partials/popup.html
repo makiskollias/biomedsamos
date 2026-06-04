@@ -1,38 +1,45 @@
-<div class="promo-popup" id="promoPopup">
-  <div class="promo-popup__box">
-    <button class="promo-popup__close" id="promoClose">×</button>
+<div id="campaign-popup" class="popup-overlay">
+    <div class="popup-box">
 
-<div class="promo-popup__box">
+        <button class="popup-close">&times;</button>
 
-  <img src="{{ url_for('static', path='images/mother.png') }}"
-       alt="Happy Mother's Day"
-       class="promo-popup__image">
+        <img
+            src="/static/images/thyroid.jpg"
+            alt="Προσφορά Θυρεοειδούς"
+            class="popup-image"
+        >
 
-  <span class="promo-popup__kicker">Προσφορά για τη Γιορτή της Μητέρας</span>
+        <span class="popup-kicker">
+            Ειδική Προσφορά
+        </span>
 
-    <h2>Ειδικά πακέτα εξετάσεων για όλες τις γυναίκες</h2>
+        <h2>
+            Έλεγχος Θυρεοειδικής Λειτουργίας
+        </h2>
 
-    <div class="promo-popup__offers">
-      <div>
-        <strong>15€</strong>
-        <span>Πακέτο οστεοπόρωσης</span>
-        <small>Βιταμίνη 25OH D, Ασβέστιο, Φώσφορος, Μαγνήσιο</small>
-      </div>
+        <div class="popup-price">
+            40€
+        </div>
 
-      <div>
-        <strong>20€</strong>
-        <span>Καρκινικοί δείκτες</span>
-        <small>CEA, CA 15-3, CA 125</small>
-      </div>
+        <div class="popup-card">
+            <ul>
+                <li>TSH</li>
+                <li>T3</li>
+                <li>T4</li>
+                <li>FT3</li>
+                <li>FT4</li>
+                <li>Anti Tg</li>
+                <li>Anti TPO</li>
+            </ul>
+        </div>
+
+        <p class="popup-note">
+            Μεμονωμένα ο έλεγχος κοστίζει περίπου 70€.
+        </p>
+
+        <a href="#contact" class="popup-cta">
+            Κλείστε Ραντεβού →
+        </a>
+
     </div>
-
-    <p class="promo-popup__note">Η προσφορά ισχύει μέχρι 31/05/2026.</p>
-
-    <a href="#contact" class="btn btn-primary promo-popup__btn" id="promoCta">
-      Κλείστε ραντεβού
-      <span class="btn-arrow">→</span>
-    </a>
-  </div>
 </div>
-
-
