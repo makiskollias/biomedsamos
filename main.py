@@ -15,6 +15,34 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
+# ---------------------------------------------------------------------------
+# Legacy URL redirects (301 Permanent)
+# Add old_path → new_path entries here as more legacy URLs are discovered.
+# Unknown URLs are NOT redirected; they return a real HTTP 404.
+# ---------------------------------------------------------------------------
+LEGACY_REDIRECTS = {
+    "/el": "/",
+    "/el/": "/",
+}
+
+
+def _register_legacy_redirects() -> None:
+    for old_path, new_path in LEGACY_REDIRECTS.items():
+        async def _redirect(target: str = new_path) -> RedirectResponse:
+            return RedirectResponse(url=target, status_code=301)
+
+        _redirect.__name__ = "legacy_redirect_" + (old_path.strip("/").replace("/", "_") or "root")
+        app.add_api_route(
+            old_path,
+            _redirect,
+            methods=["GET"],
+            include_in_schema=False,
+        )
+
+
+_register_legacy_redirects()
+
+
 @app.get("/", response_class=HTMLResponse)
 async def landing(request: Request):
     return templates.TemplateResponse("landing.html", {"request": request})
@@ -75,3 +103,8 @@ async def sitemap():
 @app.get("/robots.txt")
 async def robots():
     return FileResponse("static/robots.txt")
+
+
+@app.exception_handler(404)
+async def not_found_handler(request: Request, exc):
+    return templates.TemplateResponse("404.html", {"request": request}, status_code=404)
